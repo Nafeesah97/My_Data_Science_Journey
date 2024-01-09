@@ -23,7 +23,7 @@ My mission is to leverage my diverse skill set and background to enhance the hea
 
 Here are some of the projects I've worked on:
 
-### [Simple Calculator Using Python](link-to-project-1)
+### [Simple Calculator Using Python](https://github.com/Nafeesah97/My_Data_Science_Journey/tree/main/Calculator_project)
 
 - Description: This was to build a calculator that performs basic operations.
 - Technologies Python.
