@@ -35,11 +35,10 @@ Here are some of the projects I've worked on:
 - Technologies Used: List the tools, libraries, and languages used.
 - Highlights: Mention any notable achievements or insights from this project.
 
-### [Project Name 2](link-to-project-2)
-
-- Description: A brief description of what this project is about.
-- Technologies Used: List the tools, libraries, and languages used.
-- Highlights: Mention any notable achievements or insights from this project.
+### [Stroke Predictor](stroke_prediction_project/stroke_prediction.ipynb)
+- Description: This was to test which model better predicts the likelihood of a subject having stroke.
+- Technologies Used: Python.
+- Highlights: 
 
 Here are some of the skills and technologies I've been working with:
 
