@@ -38,7 +38,7 @@ Here are some of the projects I've worked on:
 ### [Stroke Predictor](stroke_prediction_project/stroke_prediction.ipynb)
 - Description: This was to test which model better predicts the likelihood of a subject having stroke.
 - Technologies Used: Python.
-- Highlights: 
+- Highlights: Overall, I concluded that the cross-validation model was more accurate than the train_test_split model.
 
 Here are some of the skills and technologies I've been working with:
 
