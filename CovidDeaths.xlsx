@@ -1,0 +1,186 @@
+/*DATA CLEANING USING EXCEL
+•	Selected relevant columns for analysis
+•	Format cells to correct data type
+Import data into sql database*/
+
+--To view data about death caused by covid-19
+SELECT *
+FROM covid_death
+
+--To view data about covid-19 vaccinations
+SELECT * 
+FROM covid_vac
+
+
+--Global statistics of cases, death, death rate, infection rate, and vaccination rate 
+SELECT d.location, population, MAX(d.total_cases) AS total_cases, 
+    MAX(d.total_deaths) AS total_deaths, MAX(v.people_vaccinated) As total_vaccinations, 
+    (MAX(d.total_cases)/d.population) * 100 AS infection_rate, 
+    (MAX(d.total_deaths)/MAX(d.total_cases)) * 100 AS death_rate,
+    (MAX(v.people_vaccinated)/d.population) * 100 AS vaccination_rate
+FROM covid_death AS d
+JOIN covid_vac AS v
+    ON d.location = v.location
+        ANd d.date = v.date
+WHERE d.location = 'World'
+GROUP BY d.location, d.population
+
+--Continent statistics of cases, death, death rate, infection rate, and vaccination rate
+SELECT d.location AS continent, d.population, MAX(d.total_cases) AS total_cases,
+    MAX(d.total_deaths) AS total_deaths, MAX(v.people_vaccinated) As total_vaccinations, 
+    (MAX(d.total_cases)/d.population)*100 AS infection_rate, (MAX(d.total_deaths)/MAX(d.total_cases))
+    * 100 AS death_rate, (MAX(v.people_vaccinated)/d.population) * 100 AS vaccination_rate  
+FROM covid_death AS d
+JOIN covid_vac AS v
+    ON d.location = v.location
+        ANd d.date = v.date
+WHERE d.continent IS NULL
+    AND d.location not in ('World','International','European Union')
+GROUP BY d.location, d.population
+ORDER BY death_rate DESC
+
+--Countries with number of infection
+SELECT location, MAX(total_cases) AS total_cases
+FROM covid_death
+WHERE continent IS NOT NULL AND total_cases IS NOT NULL
+GROUP BY location
+ORDER BY total_cases DESC 
+
+--Top 5 countries with highest number of infection
+SELECT location, MAX(total_cases) AS total_cases
+FROM covid_death
+WHERE continent IS NOT NULL AND total_cases IS NOT NULL
+GROUP BY location
+ORDER BY total_cases DESC LIMIT 5
+
+--Top 5 countries with least number of infection
+SELECT location, MAX(total_cases) AS total_cases
+FROM covid_death
+WHERE continent IS NOT NULL AND total_cases IS NOT NULL
+GROUP BY location
+ORDER BY total_cases ASC LIMIT 5
+
+--Countries with number of deaths
+SELECT location, MAX(total_deaths) AS total_deaths
+FROM covid_death
+WHERE continent IS NOT NULL AND total_deaths IS NOT NULL
+GROUP BY location
+ORDER BY total_deaths DESC 
+
+--Top 5 countries with highest number of deaths
+SELECT location, MAX(total_deaths) AS total_deaths
+FROM covid_death
+WHERE continent IS NOT NULL AND total_deaths IS NOT NULL
+GROUP BY location
+ORDER BY total_deaths DESC LIMIT 5
+
+--Top 5 countries with least number of deaths
+SELECT location, MAX(total_deaths) AS total_deaths
+FROM covid_death
+WHERE continent IS NOT NULL AND total_deaths IS NOT NULL
+GROUP BY location
+ORDER BY total_deaths ASC LIMIT 5
+
+--Likelihood of contracting covid-19 in a population
+SELECT DISTINCT location, population, MAX(total_cases) AS total_cases,
+    (MAX(total_cases)/population)*100 AS infection_rate
+FROM covid_death
+WHERE continent IS NOT NULL
+GROUP BY location, population
+ORDER BY infection_rate 
+
+--Top 5 countries
+SELECT location, population, MAX(total_cases) AS total_cases,
+    (MAX(total_cases)/population)*100 AS infection_rate
+FROM covid_death
+WHERE continent IS NOT NULL AND total_cases IS NOT NULL
+GROUP BY location, population
+ORDER BY infection_rate DESC LIMIT 5
+
+--Bottom 5 countries
+SELECT location, population, MAX(total_cases) AS total_cases,
+    (MAX(total_cases)/population)*100 AS infection_rate
+FROM covid_death
+WHERE continent IS NOT NULL AND total_cases IS NOT NULL
+GROUP BY location, population
+ORDER BY infection_rate ASC LIMIT 5
+
+--Likelihood of dying from covid-19 after contracting it
+SELECT location, MAX(total_cases) AS total_cases, MAX(total_deaths) 
+    AS total_deaths,(MAX(total_deaths)/MAX(total_cases)) * 100 
+    AS death_rate
+FROM covid_death
+WHERE continent IS NOT NULL AND total_deaths IS NOT NULL 
+    AND total_cases IS NOT NULL
+GROUP BY location
+ORDER BY death_rate
+
+--By country
+--Least 5 countries
+SELECT location, MAX(total_cases) AS total_cases, MAX(total_deaths) 
+    AS total_deaths, (MAX(total_deaths)/MAX(total_cases)) * 100 
+    AS death_rate
+FROM covid_death
+WHERE continent IS NOT NULL AND total_deaths IS NOT NULL 
+    AND total_cases IS NOT NULL
+GROUP BY location
+ORDER BY death_rate ASC LIMIT 5
+
+--Top 5 countries
+SELECT location, MAX(total_cases) AS total_cases, MAX(total_deaths) 
+    AS total_deaths,(MAX(total_deaths)/MAX(total_cases)) * 100 
+    AS death_rate
+FROM covid_death
+WHERE continent IS NOT NULL AND total_deaths IS NOT NULL 
+    AND total_cases IS NOT NULL
+GROUP BY location
+ORDER BY death_rate DESC LIMIT 5
+
+
+--vaccination rate per continent
+SELECT d.location AS continent, d.population, MAX(v.people_vaccinated) As total_vaccinations, 
+    (MAX(v.people_vaccinated)/d.population) * 100 AS vaccination_rate
+FROM covid_death AS d
+JOIN covid_vac AS v
+    ON d.location = v.location
+        ANd d.date = v.date
+WHERE d.continent IS  NULL AND v.people_vaccinated IS NOT NULL AND 
+    d.location not in ('World','International','European Union')
+GROUP BY d.location, d.population
+ORDER BY vaccination_rate DESC
+
+--vaccination rate per country
+SELECT d.location, d.population, MAX(v.people_vaccinated) As total_vaccinations, 
+    (MAX(v.people_vaccinated)/d.population) * 100 AS vaccination_rate
+FROM covid_death AS d
+JOIN covid_vac AS v
+    ON d.location = v.location
+        ANd d.date = v.date
+WHERE d.continent IS NOT NULL AND v.people_vaccinated IS NOT NULL
+GROUP BY d.location, d.population
+ORDER BY vaccination_rate
+
+--Top 5 countries with highest vaccination rate
+SELECT d.location, d.population, MAX(v.people_vaccinated) As total_vaccinations, 
+    (MAX(v.people_vaccinated)/d.population) * 100 AS vaccination_rate
+FROM covid_death AS d
+JOIN covid_vac AS v
+    ON d.location = v.location
+        ANd d.date = v.date
+WHERE d.continent IS NOT NULL AND v.people_vaccinated IS NOT NULL 
+    AND d.population IS NOT NULL
+GROUP BY d.location, d.population
+ORDER BY vaccination_rate DESC LIMIT 5
+
+--Top 5 countries with least vaccination rate
+SELECT d.location, d.population, MAX(v.people_vaccinated) As total_vaccinations, 
+    (MAX(v.people_vaccinated)/d.population) * 100 AS vaccination_rate
+FROM covid_death AS d
+JOIN covid_vac AS v
+    ON d.location = v.location
+        ANd d.date = v.date
+WHERE d.continent IS NOT NULL AND v.people_vaccinated IS NOT NULL 
+    AND d.population IS NOT NULL
+GROUP BY d.location, d.population
+ORDER BY vaccination_rate ASC LIMIT 5
+
