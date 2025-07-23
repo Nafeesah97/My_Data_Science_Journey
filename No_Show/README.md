@@ -23,7 +23,6 @@ This project analyzes over 110,000 medical appointment records in Brazil to unco
 ## 🧰 Tools Used
 
 - **MySQL** for data import, cleaning, querying, and aggregation
-- **SQL**: `CASE`, `SUM`, `DISTINCT`, `DELETE`, and date functions for data cleaning and analysis
 - **Spreadsheet (pre-processing)**: Replaced `T` with space and removed `Z` from datetime fields in the CSV
 
 ---
