@@ -1,6 +1,6 @@
-# My Data Science Journey
+# My Data Journey
 
-Welcome to my data science portfolio! I'm Salaudeen Naffisat, a data science enthusiast with a passion for exploring and analyzing data to derive meaningful insights. This repository showcases my journey, projects, and skills as I build expertise in data science with a focus on healthcare, business, and government.
+Welcome to my data portfolio! I'm Salaudeen Naffisat, a data science enthusiast with a passion for exploring and analyzing data to derive meaningful insights. This repository showcases my journey, projects, and skills as I build expertise in data science with a focus on healthcare, business, and government.
 
 ## About Me
 
