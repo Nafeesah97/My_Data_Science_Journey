@@ -36,11 +36,16 @@ My mission is to leverage data to improve lives—especially in the healthcare, 
 - **Technologies**: Python, Scikit-learn, Pandas.
 - **Highlights**: Compared model accuracy using cross-validation and train_test_split; cross-validation performed better.
 
-### [📊 Project Name 2](link-to-project-2)
+### [No-Show Appointments Analysis](No_Show)
 
-- **Description**: (Add a brief description.)
-- **Technologies Used**: (List tools, languages.)
-- **Highlights**: (Mention key results or insights.)
+- **Description**: This project analyzes over 110,000 medical appointment records in Brazil to uncover insights into patient attendance behavior. The dataset tracks whether patients showed up for their scheduled medical appointments, including variables like age, gender, neighborhood, chronic conditions, and reminders.
+
+- **Technologies Used**: SQL
+- **Highlights**: The analysis highlights important factors linked to patient no-shows:
+- Younger age groups (especially teens and young adults) are more likely to miss appointments.
+- SMS reminders, surprisingly, show **higher** no-show rates—likely a selection bias.
+- Certain neighborhoods and chronic conditions may correlate with higher attendance issues.
+- Wait time plays a major role: longer delays between scheduling and appointments increase no-shows.
 
 ## Skills & Tools
 
