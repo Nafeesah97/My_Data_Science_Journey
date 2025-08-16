@@ -49,13 +49,13 @@ My mission is to leverage data to improve lives—especially in the healthcare, 
 
 ## Skills & Tools
 
-- **Languages**: Python, R, SQL, C  
+- **Programming Languages**: Python, R, SQL 
 - **Libraries**: Pandas, Scikit-Learn, Matplotlib  
-- **Tools**: Jupyter Notebook, Tableau, Excel  
-- **Domains**: Data Analysis, Machine Learning, Data Visualization, Deep Learning, Computer Vision  
+- **Tools**: Jupyter Notebook, Tableau/PowerBI, Excel  
+- **Domains**: Data Analysis, Machine Learning, Data Visualization, Deep Learning, Computer Vision, Artificial Intelligence 
 
 ## Contact
 
 I’m open to collaborations and new opportunities.  
-📧 Email: salaudeennafeesah97@gmail.com  
+📧 Email: naffisatsalaudeen@gmail.com  
 💼 LinkedIn: [Connect with me](https://www.linkedin.com/in/naffisat-salaudeen-74ba6024)
