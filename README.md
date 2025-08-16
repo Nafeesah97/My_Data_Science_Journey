@@ -6,7 +6,7 @@ Welcome to my data portfolio! I'm Salaudeen Naffisat, a data science enthusiast 
 
 - **Name**: Salaudeen Naffisat Ajoke  
 - **LinkedIn**: [My LinkedIn Profile](https://www.linkedin.com/in/naffisat-salaudeen-74ba60240/)  
-- **Email**: salaudeennafeesah97@gmail.com  
+- **Email**: naffisatsaludeen@gmail.com  
 - **GitHub**: [My GitHub Profile](https://github.com/Nafeesah97)  
 
 With a background in Optometry and Vision Science, I bring a unique perspective to data science. I’m passionate about using data to drive solutions in public health, improve decision-making in business, and inform government policies.
