@@ -1,4 +1,4 @@
-##Summary
+## Summary
 There was not so much difference between those with stroke in male and female.
 
 Non-hypertensive persons had stroke than hypertensive persons.
