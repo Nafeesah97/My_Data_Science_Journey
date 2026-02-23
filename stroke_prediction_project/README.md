@@ -15,7 +15,7 @@ The populations that has never smoked had strokes than those that smokes or had 
 
 The population between age 60 and 80 had more occurrence of persons with stroke followed by age group of 40-60.
 
-Persons with average glucose level between 50-100 had more occurrencesof patients with stroke than any other groups.
+Persons with average glucose level between 50-100 had more occurrences of patients with stroke than any other groups.
 
 People with bmi of 20-40 had more occurrences of stroke than any other group.
 
