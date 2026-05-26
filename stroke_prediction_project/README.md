@@ -93,6 +93,13 @@ Cross-validation outperformed train-test split in both cases. The higher accurac
 
 ---
 
+## Public Health Relevance
+
+- Stroke is the third leading cause of death in Canada and a major driver of long-term disability, costing the health system over $3.6 billion annually
+- Identifying which population subgroups carry the highest risk supports targeted prevention programs and more efficient use of health resources
+- Findings suggest that stroke prevention messaging should extend beyond traditionally recognized high-risk groups to include working-age adults in high-demand employment sectors 
+
+---
 ## Limitations
 - The dataset is simulated and may not fully reflect real-world health data distributions
 - Class imbalance was not resampled (e.g. SMOTE was not applied), which limits model sensitivity for the minority class
