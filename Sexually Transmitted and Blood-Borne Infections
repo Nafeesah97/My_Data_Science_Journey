@@ -1,0 +1,87 @@
+# STBBI Trend 2015–2023 | Canadian Public Health Dashboard
+
+## Introduction
+STBBIs have remained a persistent and growing public health concern among Canadian youth, with reported cases of Chlamydia, Gonorrhea, and Syphilis rising steadily over the past decade. This increase has been linked to multiple factors, including changes in sexual behaviour, limited access to sexual health services, and the role of substance use in higher-risk transmission.
+
+This project is an ecological study that examines trends in four STBBIs — Chlamydia, Gonorrhea, Syphilis, and HIV — among Canadians aged 15 to 34 between 2015 and 2023, including the period disrupted by the COVID-19 pandemic. The analysis explores whether patterns differ by sex and other socio-demographic factors such as education level, family income, and unmet healthcare needs, with the goal of identifying where targeted interventions are most needed.
+
+---
+
+## Public Health Relevance
+Teenagers and young adults represent the most affected population, as this is typically the period of highest sexual activity and exploration of risk-taking behaviours such as having multiple partners and substance use. Low socioeconomic status further increases vulnerability within this group. Untreated STBBIs in this population create broader public health and economic consequences, including reduced productivity, increased healthcare burden, and long-term impacts on the overall health of Canadians. Identifying the socio-demographic characteristics of the most affected groups is therefore essential for designing targeted and effective interventions.
+
+---
+
+## Data Overview
+The data was obtained from the Public Health Agency of Canada (PHAC) and Statistics Canada. The data from PHAC included rates per 100,000 for Chlamydia, HIV, Gonorrhea, and Syphilis from 2015 to 2023. Household family income, education level, and percentage of unmet healthcare needs were extracted for 2015 to 2023. The age range focused on was the 15 to 34-year-old age group.
+
+---
+
+## Tools & Methods
+Data was extracted from the Public Health Agency of Canada (PHAC) and Statistics Canada. Excel was used for data cleaning, manipulation, and analysis, which involved data aggregation and transformation to prepare the dataset for visualization. The cleaned and aggregated data was then transferred to Power BI, where interactive dashboards were created to explore trends across the identified socio-demographic factors.
+
+---
+
+## Results
+
+### Chlamydia
+Chlamydia remained the most reported infection throughout the study period. The rate rose 12.3% from 1,065.58 per 100,000 in 2015 to a peak of 1,196.54 in 2019, before dropping sharply by 15.2% in 2020 and further to 19.0% below the 2015 baseline in 2021, likely reflecting the impact of COVID-19 on healthcare access and reporting. By 2023, the rate had partially recovered to 972.10 per 100,000, still 8.8% below 2015 levels.
+
+### Gonorrhea
+Gonorrhea showed a consistent upward trend over the study period. The rate climbed 61.2% from 150.35 per 100,000 in 2015 to 242.41 in 2018. A moderate decline was observed in 2020, with the rate falling to 200.58 per 100,000 — still 33.4% above the 2015 baseline. By 2023, the rate had risen again to 234.96 per 100,000, representing a 56.3% overall increase from 2015.
+
+### HIV
+HIV was the only infection that showed an overall declining trend across the study period. The rate decreased 19.6% from 8.10 per 100,000 in 2015 to 6.51 in 2020. A partial recovery was observed by 2022, with the rate rising to 7.40 per 100,000, remaining 8.6% below the 2015 baseline.
+
+> **Note:** HIV cases were not reported for 2023.
+
+### Syphilis
+Syphilis recorded the most alarming growth of all four infections. Starting at 17.00 per 100,000 in 2015, the rate rose 43.9% by 2017 and surged 236.7% by 2019. By 2022, the rate had reached 88.24 per 100,000 — a 419.1% increase from 2015, representing more than five times the baseline rate. A slight decline was observed in 2023 at 81.18 per 100,000, though the rate remained 377.5% above 2015 levels, signalling Syphilis as a growing public health concern in Canada.
+
+---
+
+### Breakdown by Sex
+
+**Sex**
+Generally, males reported more cases of HIV, Syphilis, and Gonorrhea than females, while females reported more Chlamydia. The divergence between both genders remained approximately the same from 2015 to 2023 in Chlamydia reported cases. The divergence is irregular for Gonorrhea with a widening gap since 2021. The divergence has been irregular for HIV cases before 2020, which now has a constant gap till 2023. The gap in Syphilis cases between males and females has been narrowing, with a gradual surge in cases reported in females.
+
+**Age**
+As age group increases, the reported cases in females gradually decrease and that of males increases, except for HIV where the 30-34 age range had a higher female percentage than the 20-29 group.
+
+---
+
+### Education
+The relationship between education level and STBBI infection rates varied across the four diseases. Chlamydia and HIV showed a consistent pattern where higher education levels, particularly tertiary education, were associated with lower infection rates. In contrast, Gonorrhea and Syphilis showed the opposite pattern, with tertiary education associated with higher infection rates. These findings suggest that education alone does not uniformly reduce the risk of STBBIs, and that other social and behavioural factors may play a role depending on the infection.
+
+---
+
+### Family Income
+Family income showed varying associations with STBBI infection rates across the four diseases. Chlamydia and HIV both decreased with increasing family income, suggesting that higher income may be a protective factor for these two infections. Gonorrhea showed a weak positive association with family income, with cases slightly increasing as income rises, remaining within a similar range since 2017. Syphilis, however, showed increasing cases with higher family income, consistent with the pattern observed in the education analysis. These findings indicate that higher socioeconomic status does not uniformly reduce the risk of STBBIs across all infections.
+
+---
+
+### Healthcare Access
+The relationship between unmet healthcare needs and STBBI infection rates showed a mixed pattern across the four diseases. Chlamydia, Gonorrhea in the 15-24 age group, and HIV all showed decreasing infection rates with increasing unmet healthcare needs. This may suggest that reduced healthcare access leads to lower testing and reporting rather than fewer actual infections. Syphilis, however, showed the opposite trend, with cases increasing alongside rising unmet healthcare needs, highlighting it as particularly sensitive to gaps in healthcare access. Overall, these findings point to the important role healthcare access plays in the detection and management of STBBIs across different age groups.
+
+---
+
+### COVID-19 Impacts
+There was a decrease in the average rate of STBBIs following COVID-19, except for Syphilis, which continued to increase post-COVID. Chlamydia experienced the most drastic reduction, followed by Gonorrhea. HIV, which had already been on a gradual decline before COVID-19, also saw a further decrease during this period.
+
+---
+
+## Key Findings
+- The onset of COVID-19 resulted in a decrease in the rate of all identified STBBIs except Syphilis, which continued to rise during this period.
+- Males reported more cases of Gonorrhea, Syphilis, and HIV than females, while females reported disproportionately higher rates of Chlamydia.
+- Tertiary education appeared to be protective against Chlamydia and HIV but was associated with higher rates of Gonorrhea and Syphilis, suggesting that education alone does not uniformly reduce STBBI risk.
+- Syphilis recorded the most alarming growth across the study period, rising 419.1% from 2015 to 2022 — more than five times its baseline rate — making it the most critical public health concern among the four infections analyzed.
+
+---
+
+## Limitations
+Limitations included the unreported rate of HIV in 2023. In addition, in years before 2020, there may be a mixture of reporting of first-time diagnoses with previously diagnosed cases of HIV. As from 2020, all provinces and territories except Quebec provided first-time diagnosed cases of HIV. Syphilis reporting does not differentiate between various categories of Syphilis, with the exception of congenital Syphilis, which is reported separately. There is also unreported percentage of unmet healthcare need from 2015 to 2017.
+
+---
+
+## Conclusion
+These findings highlight the need to target vulnerable populations in the prevention and control of STBBIs. Socioeconomic determinants of health must be addressed across all areas, as this analysis showed that factors such as income, education, and healthcare access do not uniformly affect all STBBIs in the same way. Given that STBBIs vary widely and are transmitted through different routes, public health measures must take a comprehensive approach that includes health promotion to increase awareness, equitable access to healthcare to reduce missed and unreported cases, timely treatment and management of STBBIs, and improving the overall living standards of Canadians.
