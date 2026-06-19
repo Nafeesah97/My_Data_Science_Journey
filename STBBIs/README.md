@@ -23,6 +23,7 @@ Data was extracted from the Public Health Agency of Canada (PHAC) and Statistics
 ---
 
 ## Results
+<img width="1431" height="846" alt="STTB_overview" src="https://github.com/user-attachments/assets/3cff96e3-425f-45cf-96e0-9821f0ecf19a" />
 
 ### Chlamydia
 Chlamydia remained the most reported infection throughout the study period. The rate rose 12.3% from 1,065.58 per 100,000 in 2015 to a peak of 1,196.54 in 2019, before dropping sharply by 15.2% in 2020 and further to 19.0% below the 2015 baseline in 2021, likely reflecting the impact of COVID-19 on healthcare access and reporting. By 2023, the rate had partially recovered to 972.10 per 100,000, still 8.8% below 2015 levels.
@@ -41,6 +42,7 @@ Syphilis recorded the most alarming growth of all four infections. Starting at 1
 ---
 
 ### Breakdown by Sex
+<img width="1430" height="846" alt="breakdown_by_sex" src="https://github.com/user-attachments/assets/8c7f2589-4ac8-4924-b0a7-1e23327bf5e8" />
 
 **Sex**
 Generally, males reported more cases of HIV, Syphilis, and Gonorrhea than females, while females reported more Chlamydia. The divergence between both genders remained approximately the same from 2015 to 2023 in Chlamydia reported cases. The divergence is irregular for Gonorrhea with a widening gap since 2021. The divergence has been irregular for HIV cases before 2020, which now has a constant gap till 2023. The gap in Syphilis cases between males and females has been narrowing, with a gradual surge in cases reported in females.
@@ -51,21 +53,29 @@ As the age group increases, the reported cases in females gradually decrease, an
 ---
 
 ### Education
+<img width="1430" height="846" alt="education" src="https://github.com/user-attachments/assets/aee2469a-568b-451f-8c31-e3dd8baa63dd" />
+
 The relationship between education level and STBBI infection rates varied across the four diseases. Chlamydia and HIV showed a consistent pattern where higher education levels, particularly tertiary education, were associated with lower infection rates. In contrast, Gonorrhea and Syphilis showed the opposite pattern, with tertiary education associated with higher infection rates. These findings suggest that education alone does not uniformly reduce the risk of STBBIs, and that other social and behavioural factors may play a role depending on the infection.
 
 ---
 
 ### Family Income
+<img width="1430" height="846" alt="fam_income" src="https://github.com/user-attachments/assets/e626c4ca-176b-4ba6-bfb9-0b1f26ca7da2" />
+
 Family income showed varying associations with STBBI infection rates across the four diseases. Chlamydia and HIV both decreased with increasing family income, suggesting that higher income may be a protective factor for these two infections. Gonorrhea showed a weak positive association with family income, with cases slightly increasing as income rises, remaining within a similar range since 2017. Syphilis, however, showed increasing cases with higher family income, consistent with the pattern observed in the education analysis. These findings indicate that higher socioeconomic status does not uniformly reduce the risk of STBBIs across all infections.
 
 ---
 
 ### Healthcare Access
+<img width="1430" height="846" alt="healthcare" src="https://github.com/user-attachments/assets/98dafcd5-962c-4ef3-8c42-17a18b63c621" />
+
 The relationship between unmet healthcare needs and STBBI infection rates showed a mixed pattern across the four diseases. Chlamydia, Gonorrhea in the 15-24 age group, and HIV all showed decreasing infection rates with increasing unmet healthcare needs. This may suggest that reduced healthcare access leads to lower testing and reporting rather than fewer actual infections. Syphilis, however, showed the opposite trend, with cases increasing alongside rising unmet healthcare needs, highlighting it as particularly sensitive to gaps in healthcare access. Overall, these findings point to the important role healthcare access plays in the detection and management of STBBIs across different age groups.
 
 ---
 
 ### COVID-19 Impacts
+<img width="1430" height="846" alt="covid19" src="https://github.com/user-attachments/assets/798ac508-dc31-41f1-8a43-7e2b3098b8f7" />
+
 There was a decrease in the average rate of STBBIs following COVID-19, except for Syphilis, which continued to increase post-COVID. Chlamydia experienced the most drastic reduction, followed by Gonorrhea. HIV, which had already been on a gradual decline before COVID-19, also saw a further decrease during this period.
 
 ---
