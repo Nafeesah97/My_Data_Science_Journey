@@ -85,6 +85,8 @@ There was a decrease in the average rate of STBBIs following COVID-19, except fo
 - Males reported more cases of Gonorrhea, Syphilis, and HIV than females, while females reported disproportionately higher rates of Chlamydia.
 - Tertiary education appeared to be protective against Chlamydia and HIV but was associated with higher rates of Gonorrhea and Syphilis, suggesting that education alone does not uniformly reduce STBBI risk.
 - Syphilis recorded the most alarming growth across the study period, rising 419.1% from 2015 to 2022 — more than five times its baseline rate — making it the most critical public health concern among the four infections analyzed.
+- Higher family income was associated with lower rates of Chlamydia and HIV but higher rates of Gonorrhea and Syphilis, indicating that higher socioeconomic status does not uniformly reduce STBBI risk.
+- Increasing unmet healthcare needs was associated with decreasing rates of Chlamydia, Gonorrhea, and HIV, likely reflecting reduced testing and reporting rather than fewer actual infections, while Syphilis cases increased with rising unmet needs.
 
 ---
 
