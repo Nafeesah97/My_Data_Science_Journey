@@ -1,4 +1,4 @@
-# No-Show Appointments Analysis 📅🚫
+# Missed Appointments Analysis 📅🚫
 
 This project analyzes over 110,000 medical appointment records in Brazil to uncover insights into patient attendance behavior. The dataset tracks whether patients showed up for their scheduled medical appointments, including variables like age, gender, neighborhood, chronic conditions, and reminders.
 
